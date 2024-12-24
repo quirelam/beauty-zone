@@ -1,0 +1,17 @@
+.our-procedures-section {
+  &__container {
+    overflow: hidden;
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  &__list {
+    // display: flex;
+    // gap: 16px;
+    margin-bottom: 32px;
+  }
+}

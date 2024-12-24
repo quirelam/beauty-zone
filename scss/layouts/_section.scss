@@ -1,0 +1,22 @@
+.section {
+  padding: 20px 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 48px 0;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: 'play', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 64px;
+      font-weight: 700;
+    }
+    &--lefted {
+      text-align: left;
+    }
+  }
+}

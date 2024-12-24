@@ -1,0 +1,64 @@
+.contacts-section {
+  padding-bottom: 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-bottom: 40px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column-reverse;
+
+    gap: 24px;
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 32px;
+    }
+  }
+  &__map {
+    display: block;
+    margin: 0 -24px;
+    border-color: transparent;
+    border-radius: 0;
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0;
+      width: 60%;
+      max-width: 606px;
+      border-radius: 32px;
+    }
+  }
+  &__form {
+    width: 100%;
+    padding: 42px 24px;
+    background-color: var(--color-brand-dark);
+    border-radius: 48px;
+    background-image: url(../images/background-form.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 40%;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 48px 56px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background-form@2x.png);
+    }
+  }
+
+  &__form-field {
+    margin-bottom: 16px;
+  }
+}

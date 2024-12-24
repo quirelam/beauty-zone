@@ -1,0 +1,22 @@
+.input {
+  border: 2px solid var(--color-button-dark);
+  border-radius: 32px;
+  background-color: transparent;
+  padding: 18px 32px;
+  width: 100%;
+  color: var(--color-text-light);
+  transition: background-color 0.2s, outline 0.2s;
+
+  &:focus-within {
+    background-color: var(--color-button-dark);
+    outline: none;
+  }
+
+  &::placeholder {
+    color: var(--color-text-light);
+  }
+
+  &__margin {
+    margin-bottom: 24px;
+  }
+}

@@ -1,0 +1,33 @@
+.procedures-card {
+  position: relative;
+  border-radius: 4px 120px;
+  overflow: hidden;
+  background-image: linear-gradient(
+    180.05deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.725825) 84.61%,
+    #011c44 101.39%
+  );
+
+  &__photo {
+    position: relative;
+    z-index: -1;
+  }
+
+  &__title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto 32px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.18;
+    font-weight: 400;
+    color: var(--color-text-light);
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 22px;
+    }
+  }
+}

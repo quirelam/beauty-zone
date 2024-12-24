@@ -1,0 +1,126 @@
+.footer {
+  position: relative;
+  padding: 32px 0px;
+  background-color: var(--color-brand-dark);
+  background-image: url(../images/background-footer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 56px 0px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/background-footer@2x.png);
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    justify-content: space-between;
+    gap: 20px;
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      align-items: flex-start;
+
+      gap: 40px;
+    }
+  }
+
+  &__nav-container,
+  &__address-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
+  }
+
+  &__logo {
+    flex-grow: 1;
+    font-size: 16px;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 24px;
+    }
+  }
+
+  &__menu-links {
+    flex-grow: 1;
+
+    &--hidden {
+      display: none;
+
+      @media screen and (min-width: $bp-tablet) {
+        display: block;
+      }
+    }
+  }
+
+  &__icons-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 24px;
+    }
+  }
+
+  &__icon {
+    fill: var(--color-text-light);
+    transition: fill 0.2s;
+
+    &:hover {
+      fill: var(--color-brand-light);
+    }
+  }
+
+  &__policy-text {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__small-text {
+    font-style: normal;
+    font-size: 12px;
+    color: var(--color-text-dark);
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 13px;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: none;
+    bottom: 0;
+    right: 0;
+    width: 248px;
+    height: 152px;
+    background-image: url(../images/background-bottles.png);
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background-bottles@2x.png);
+    }
+  }
+}
